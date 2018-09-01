@@ -1,5 +1,7 @@
 <h1 class="title" data-bind="title"></h1>
 
-<h2 class="value" data-bind="value | shortenedNumber | prepend prefix | append suffix"></h2>
+<h2 class="value" data-bind="value" data-view="Hotness" data-cool="10" data-warm="90"></h2>
 
-<p class="updated-at" data-bind="updatedAtMessage"></p>
+<input class="meter" data-angleOffset=-125 data-angleArc=250 data-bind-data-height="80" data-bind-data-width="80" data-readOnly=true bind-value="value2 | append suffix" data-bind-data-min="min" data-bind-data-max="max"></input>
+
+

@@ -15,6 +15,7 @@ $background-color: #000000;
 $value-color: #FFFFFF;
 $title-color: rgba(255, 255, 255, 0.7);
 $updated-at-color: rgba(0, 0, 0, 0.3);
+$meter-background:  darken($background-color, 25%);
 
 // ----------------------------------------------------------------------------
 // Widget-hotness styles
@@ -35,6 +36,11 @@ $updated-at-color: rgba(0, 0, 0, 0.3);
   .updated-at {
     color: $updated-at-color;
   }
+
+  input.meter {
+  background-color: $meter-background;
+  color: #fff;
+  } 
 
 }
 
