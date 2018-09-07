@@ -31,16 +31,21 @@ $meter-background:  darken($background-color, 25%);
 
   .value {
     color: $value-color;
+    background-color: $background-color;
+
+  }
+
+  .meter {
+
+    color: $value-color;
+    background-color: $background-color;
+
   }
 
   .updated-at {
     color: $updated-at-color;
   }
 
-  input.meter {
-  background-color: $meter-background;
-  color: #fff;
-  } 
 
 }
 
