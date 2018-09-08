@@ -11,35 +11,29 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color: #000000;
+//$background-color: #000000;
 $value-color: #FFFFFF;
 $title-color: rgba(255, 255, 255, 0.7);
 $updated-at-color: rgba(0, 0, 0, 0.3);
-$meter-background:  darken($background-color, 25%);
-
+//$meter-background:  darken($background-color, 25%);
+$meter-background: #000000;
 // ----------------------------------------------------------------------------
 // Widget-hotness styles
 // ----------------------------------------------------------------------------
 .widget-hotness {
 
-  background-color: $background-color;
-  @include transition(background-color, 1s, linear);
+ // background-color: $background-color;
+ // @include transition(background-color, 1s, linear);
 
   .title {
     color: $title-color;
   }
 
-  .value {
-    color: $value-color;
-    background-color: $background-color;
-
-  }
-
   .meter {
 
     color: $value-color;
-    background-color: $background-color;
-
+    //background-color: $background-color;
+      background-color: $meter-background; 
   }
 
   .updated-at {

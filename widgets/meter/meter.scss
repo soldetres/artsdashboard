@@ -13,8 +13,12 @@ $meter-background:  darken($background-color, 15%);
 // ----------------------------------------------------------------------------
 .widget-meter {
 
-  background-color: $background-color;
+    background-color: $background-color;
+  value {
+background-color: $meter-background;
 
+  }
+    
   input.meter {
     background-color: $meter-background;
     color: #fff;

@@ -11,13 +11,13 @@ class Dashing.Hotness extends Dashing.Widget
     super
     @observe 'value2', (value) ->
       $(@node).find(".meter").val(value).trigger('change')
-    
+  
   ready: ->
     meter = $(@node).find(".meter")
     meter.attr("data-bgcolor", meter.css("background-color"))
     meter.attr("data-fgcolor", meter.css("color"))
     meter.knob()
-  
+
   onData: (data) ->
     node = $(@node)
     value = parseInt data.value
